@@ -14,14 +14,14 @@ const connectDB = async (): Promise<void> => {
         w: "majority",
       }
     );
-    console.log(`MongoDB connected: ${conn.connection.host}`);
+    console.log(`✅ MongoDB connected: ${conn.connection.host}`);
     console.log(
       `Database name: ${
         conn.connection.db ? conn.connection.db.databaseName : "N/A"
       }`
     );
   } catch (error) {
-    console.error("MongoDB connection FAILED:", error);
+    console.error("❌ MongoDB connection FAILED:", error);
     // Exit the process with a failure code
     process.exit(1);
   }

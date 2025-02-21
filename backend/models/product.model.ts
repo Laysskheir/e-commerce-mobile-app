@@ -16,6 +16,7 @@ const productSchema: Schema = new Schema<IProduct>(
     },
     slug: {
       type: String,
+      required: [true, "Product slug is required"],
       unique: true,
       lowercase: true,
     },

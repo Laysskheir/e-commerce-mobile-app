@@ -91,6 +91,7 @@ export class ProductService {
         ...product.toObject(),
         images: product.images?.map(generateFullImageUrl),
       }));
+      
     } catch (error) {
       console.error("Error fetching products:", error);
       throw new Error("Failed to fetch products");

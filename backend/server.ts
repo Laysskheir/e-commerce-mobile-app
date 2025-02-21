@@ -10,7 +10,7 @@ import authRoutes from "./routes/auth.routes";
 
 dotenv.config();
 
-const app = express();
+export const app = express();
 
 // CORS Configuration
 const corsOptions = {
